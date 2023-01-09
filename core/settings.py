@@ -8,7 +8,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = config("DEBUG")
-SECRET_KEY=config("SECRET_KEY")
+SECRET_KEY = "41e817ed5215ae0a13a609c5ee7d085179dce6685e1d6d91ca1ec4c6c511e3ea110b5ffe19db926d36ac89609b80b02597d0"
 
 
 ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost']
