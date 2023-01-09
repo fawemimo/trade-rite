@@ -32,7 +32,6 @@ INSTALLED_APPS = [
 
     # django packages
     'tinymce',
-    'widget_tweaks',
     
 ]
 
