@@ -7,9 +7,9 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = config("SECRET_KEY")
+# SECRET_KEY = config("SECRET_KEY")
 DEBUG = config('DEBUG', default=False, cast=bool)
-# SECRET_KEY=django-insecure-)_reirmfmm+b_*f*@mn29@oq97a918w*(d3h45jv_m4a-pq9d3
+SECRET_KEY='django-insecure-)_reirmfmm+b_*f*@mn29@oq97a918w*(d3h45jv_m4a-pq9d3'
 
 
 ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost']
@@ -134,6 +134,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     from .local_settings import *
 
 # except ImportError:
-#     pass    
+#     pass    Internal Server Error
 
 django_on_heroku.settings(locals())
