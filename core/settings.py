@@ -7,9 +7,9 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECRET_KEY = config("SECRET_KEY")
-DEBUG = config('DEBUG', default=False, cast=bool)
-SECRET_KEY='django-insecure-)_reirmfmm+b_*f*@mn29@oq97a918w*(d3h45jv_m4a-pq9d3'
+SECRET_KEY = os.environ.get("SECRET_KEY")
+DEBUG = os.environ.get('DEBUG', default=False, cast=bool)
+# SECRET_KEY='django-insecure-)_reirmfmm+b_*f*@mn29@oq97a918w*(d3h45jv_m4a-pq9d3'
 
 
 ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost']
@@ -40,8 +40,8 @@ SITE_ID=1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware', #heroku storage middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', #heroku storage middleware
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
