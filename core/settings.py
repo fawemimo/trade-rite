@@ -8,7 +8,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY")
-DEBUG = os.environ.get('DEBUG', default=False, cast=bool)
+DEBUG = os.environ.get('DEBUG', default=False)
 # SECRET_KEY='django-insecure-)_reirmfmm+b_*f*@mn29@oq97a918w*(d3h45jv_m4a-pq9d3'
 
 
