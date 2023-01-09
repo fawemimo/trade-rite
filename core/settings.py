@@ -136,4 +136,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # except ImportError:
 #     pass    Internal Server Error
 
+if os.getcwd() == '/app':
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    SECURE_SSL_REDIRECT = True
+    # SESSION_COOKIE_SECURE = True
+
 django_heroku.settings(locals())
