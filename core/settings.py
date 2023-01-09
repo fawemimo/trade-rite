@@ -7,8 +7,8 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = config('DEBUG')
-SECRET_KEY=config('SECRET_KEY')
+DEBUG = config("DEBUG")
+SECRET_KEY=config("SECRET_KEY")
 
 
 ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost']
@@ -72,11 +72,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT':config('PORT')
+        'NAME': config("NAME"),
+        'USER': config("USER"),
+        'PASSWORD': config("PASSWORD"),
+        'HOST': config("HOST"),
+        'PORT':config("PORT")
     }
 }
 
