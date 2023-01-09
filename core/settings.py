@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import django_on_heroku
+import django_heroku
 import dj_database_url
 from decouple import config
 
@@ -18,7 +18,7 @@ ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.admin', 
     'django.contrib.auth',
     'django.contrib.sites',
     'django.contrib.sitemaps',
@@ -136,4 +136,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # except ImportError:
 #     pass    Internal Server Error
 
-django_on_heroku.settings(locals())
+django_heroku.settings(locals())
