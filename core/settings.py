@@ -12,7 +12,7 @@ DEBUG = os.environ.get('DEBUG', default=False)
 # SECRET_KEY='django-insecure-)_reirmfmm+b_*f*@mn29@oq97a918w*(d3h45jv_m4a-pq9d3'
 
 
-ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost','trade-rite.ng', 'www.trade-rite.ng']
 
 
 # Application definition
