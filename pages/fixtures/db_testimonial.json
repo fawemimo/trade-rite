@@ -1,0 +1,22 @@
+[
+{
+    "model": "pages.testimonial",
+    "pk": 1,
+    "fields": {
+        "full_name": "Lati",
+        "position": "CEO",
+        "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa officia provident aspernatur error labore nostrum asperiores quaerat quasi exercitationem ipsam sunt iusto magni sit, at sed. Amet aliquam accusamus doloremque.",
+        "image": "logo-whitebg.jpg"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 2,
+    "fields": {
+        "full_name": "Wale",
+        "position": "CEO",
+        "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ab ut at maxime harum esse, quo deserunt? Accusamus eos voluptatem sit necessitatibus ipsa? Nobis nihil officiis quibusdam earum rerum eveniet?\r\n\r\n\t\tLorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ab ut at maxime harum esse, quo deserunt? Accusamus eos voluptatem sit necessitatibus ipsa? Nobis nihil officiis quibusdam earum rerum eveniet?",
+        "image": "logo-whitebg.jpg"
+    }
+}
+]

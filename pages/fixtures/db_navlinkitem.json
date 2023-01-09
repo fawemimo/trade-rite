@@ -1,0 +1,52 @@
+[
+{
+    "model": "pages.navlinkitem",
+    "pk": 1,
+    "fields": {
+        "navlink": 1,
+        "title": "certificate",
+        "url_link": "'home'",
+        "descriptions": "our certificate is essential"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 2,
+    "fields": {
+        "navlink": 2,
+        "title": "Instagram",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng social handles"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 3,
+    "fields": {
+        "navlink": 2,
+        "title": "Facebook",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng facebook handles"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 4,
+    "fields": {
+        "navlink": 2,
+        "title": "Twitter",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng twitter handles"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 5,
+    "fields": {
+        "navlink": 2,
+        "title": "Linkedin",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng linkedin handles"
+    }
+}
+]

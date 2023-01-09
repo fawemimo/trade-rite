@@ -4,7 +4,7 @@ from .models import *
 
 def home(request):
    componentdump = ComponentDump.objects.all()
-   navlinkitem = NavLinkItem.objects.select_related('navlink')
+   navlinkitem = NavLink.objects.all()
    testimonial = Testimonial.objects.all()
    aboutus = SectionBanner.objects.all()
    seo = SeoOptimization.objects.all()

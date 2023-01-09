@@ -13,7 +13,7 @@ sitemaps = {
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('trademgmt/', admin.site.urls),
     path('',include('pages.urls')),
     path('sitemap.xml',sitemap,{'sitemaps':sitemaps}),
     path('tinymce/', include('tinymce.urls'))

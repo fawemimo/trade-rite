@@ -1,9 +1,13 @@
 import os
 from pathlib import Path
+import django_on_heroku
+import dj_database_url
+from decouple import config
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'django-insecure-jr$g3(&&(x!ti6g4n*vl%-odnt%j%y*$4um_d*+#o8r8vhlw78'
+SECRET_KEY = config('SECRET_KEY')
 
 
 DEBUG = True
@@ -27,8 +31,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
 
     # django packages
-    # 'tinymce',
-    'meta',
+    'tinymce',
     'widget_tweaks',
     
 ]
@@ -37,6 +40,7 @@ SITE_ID=1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', #heroku storage middleware
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -69,11 +73,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'trade_db',
-        'USER': 'postgres',
-        'PASSWORD': 'SUNday@247',
-        'HOST': 'localhost',
-        'PORT': 5432
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
+        'PORT':config('PORT')
     }
 }
 
@@ -110,12 +114,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'core/static')
 ]
-
+# Heroku static files storage
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -125,8 +130,10 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-try:
-    from .local_settings import *
+# try:
+#     from .local_settings import *
 
-except ImportError:
-    pass    
+# except ImportError:
+#     pass    
+
+django_on_heroku.settings(locals())

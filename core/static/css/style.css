@@ -26,6 +26,7 @@ header{
 }
 
 
+
 div.topbar {
 	background: rgba(32, 206, 16, 0.1);
 	width: 100%;
@@ -1628,4 +1629,9 @@ footer > div:last-of-type {
 		color: var(--text-color);
 		text-decoration: none;
 	}
+}
+
+header div.container div.logo > p{
+    margin-left: 70px;
+    margin-top: -13px;
 }

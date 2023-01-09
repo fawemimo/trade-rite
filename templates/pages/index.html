@@ -17,7 +17,7 @@
 		{% endfor %}
 		{% endif %}
 		<meta property="og:site_name" content="Trade rite trade-rite">
-		<meta property="og:image" content="">
+		<meta property="og:image" content="{% static 'img/Group 2.png' %}">
 		<meta property="og:site_name" content="Trade rite trade-rite"></meta>
 		<meta property="og:image:alt" content="Trade rite logo">
 		<meta property="og:image:width" content="1200">
@@ -61,6 +61,7 @@
 				<div class="container">
 					<div class="logo">
 						<img src="{% static 'img/Group 2.png' %}" alt="trade-rite.ng logo" />
+						<p>RC 3673142</p>
 
 					</div>
 					<nav>
@@ -2293,11 +2294,15 @@
 				{% for x in  navlinkitem %}					
 				
 				<div class="navlist-container">
-					<span>{{x.navlink.title}}</span>
+					<span>{{x.title}}</span>
 					<ul>
-						<li><a href="{{x.url_link}}">{{x.title}}</a></li>
+						{% for y in  x.navlinkitem_set.all %}
+						  
+						<li><a href="{{y.url_link}}">{{y.title}}</a></li>
+						{% endfor %}
 						
 					</ul>
+					# navlinkitem = NavLinkItem.navlink_set.all()
 				</div>
 				{% endfor %}
 				{% endif %}
