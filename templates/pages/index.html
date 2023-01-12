@@ -10,15 +10,15 @@
 		  
 		
 		{% for x in seo %}	  
-		<meta name="description" content="{{x.seo_keyword}} trade-rite.ng">
+		<meta name="description" content="{{x.seo_keyword}}, www.trade-rite.ng">
 		
-		<meta name="keywords" content="{{x.seo_keyword}} trade-rite.ng">
+		<meta name="keywords" content="{{x.seo_keyword}}, www.trade-rite.ng">
 		<meta property="og:description" content="{{x.seo_keyword}}">
 		{% endfor %}
 		{% endif %}
-		<meta property="og:site_name" content="Trade rite trade-rite">
+		<meta property="og:site_name" content="www.trade-rite.ng">
 		<meta property="og:image" content="{% static 'img/Group 2.png' %}">
-		<meta property="og:site_name" content="Trade rite trade-rite"></meta>
+		<meta property="og:site_name" content="www.trade-rite.ng"></meta>
 		<meta property="og:image:alt" content="Trade rite logo">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:alt" content="Trade rite logo">
@@ -29,9 +29,9 @@
 		<meta property="og:image:alt" content="Trade rite logo">
 		<meta property="og:image:alt" content="Trade rite logo"></meta>
 		</meta>
-		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:card" content="summary">
 		<meta property="og:image:type" content="image/png">
-		<title>Trade-rite || Buying and Selling of Cryptocurrency</title>
+		<title>Trade-rite | Buying and Selling of Cryptocurrency</title>
 
 		<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/android-chrome-512x512.png' %}">
 		<link rel="icon" type="image/x-icon" href="{% static 'img/android-chrome-512x512.png' %}">
@@ -68,11 +68,14 @@
 						<ul>
 							<li><a href="{% url 'home' %}"> Home </a></li>
 							<li><a href="#about-us"> About Us </a></li>
-							<li><a href="#"> Contact Us </a></li>
+							<li><a href="#contact-us"> Contact Us </a></li>
 						</ul>
 					</nav>
+					
 					<div class="get-started">
-						<span> Get Started </span>
+						
+						<span> <a href="https://wa.me/07062592046?text=I'm%20making%20enquiry%20on%20cryptocurrencies"  target="_blank"> Get Started </a> </span>
+					
 					</div>
 				</div>
 			</header>
@@ -2151,7 +2154,10 @@
 				</p>
 			</div>
 			<div class="easy-steps-button">
-				<button>Get Started with Trade Rite</button>
+				<button>
+					<a href="https://wa.me/07062592046?text=I'm%20making%20enquiry%20on%20cryptocurrencies"  target="_blank">
+						Get Started with Trade Rite
+					</a></button>
 			</div>
 			<img src="{% static 'img/bottomleft-3steps.png' %}" alt="" />
 			<img src="{% static 'img/topright-3steps.png' %}" alt="" />
@@ -2284,10 +2290,39 @@
 		</section>
 		{% endfor %}
 		{% endif %}
+			<!-- CONTACT US -->
+		<section class="about-us sec" style="background-color: white !important" id="contact-us">
+			<p>Contact Us</p>
+			<div class="get-in-touch">
+				<div class="gt-container">
+					<img src="{% static 'img/icons8-mail.gif' %}" alt="" />
+					<span>traderite.ng1@gmail.com</span>
+				</div>
+				<div class="gt-container">
+					<img src="{% static 'img/icons8-iphone-se.gif' %}" alt="" />
+					<span>+234 706 2592 046</span>
+				</div>
+				<div class="gt-container">
+					<img src="{% static 'img/icons8-location.gif' %}" width="40px" alt="" />
+					<span>5, Pineapple Avenue, Ologunneru, Ibadan</span>
+				</div>
+			</div>
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.26861861414!2d3.884707013800108!3d7.3236954153775216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398e12a3907383%3A0xca7d387ff8c0ae2d!2sPineapple%20Dr%2C%20110115%2C%20Ibadan%2C%20Oyo!5e0!3m2!1sen!2sng!4v1673362346612!5m2!1sen!2sng"
+				width="100%"
+				height="450"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+
 		<footer>
 			<div>
 				<img src="{% static 'img/Group 2.png' %}" alt="trade-rite.ng logo" />
-				<button>Get Started</button>
+				<button><a href="https://wa.me/07062592046?text=I'm%20making%20enquiry%20on%20cryptocurrencies"  target="_blank">
+					Get Started
+				</a></button>
 			</div>
 			<div>
 				{% if navlinkitem %}
@@ -2377,7 +2412,20 @@
 				</div>
 			</div> -->
 		</footer>
-
+		
+		<!-- whatsapp -->
+		<a href="https://wa.me/07062592046?text=I'm%20making%20enquiry%20on%20cryptocurrencies"  target="_blank" class="whatsappContact">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 50 50"
+				width="80px"
+				height="80px"
+			>
+				<path
+					d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"
+				/>
+			</svg>
+		</a>
 		<script defer src="{% static 'js/observer.js' %}"></script>
 	</body>
 </html>

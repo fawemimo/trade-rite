@@ -11,7 +11,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get('DEBUG', default=False)
 
 
-ALLOWED_HOSTS = ['trade-rite-ng.herokuapp.com','localhost','trade-rite.ng', 'www.trade-rite.ng']
+ALLOWED_HOSTS = ['localhost','trade-rite.ng', 'www.trade-rite.ng']
 
 
 # Application definition

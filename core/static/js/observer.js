@@ -35,12 +35,16 @@ window.addEventListener("load", () => {
 		btn.setAttribute("data-index", i);
 	});
 	showCurrentTab();
+	tabButtons[activeIndex].style.color = "black";
 });
 
 tabButtons.forEach((btn) => {
 	btn.addEventListener("click", () => {
 		activeIndex = btn.dataset.index;
 		showCurrentTab();
-		console.log(activeIndex);
+		tabButtons.forEach((bt) => {
+			bt.style.color = "#8C8C8C";
+		});
+		tabButtons[activeIndex].style.color = "black";
 	});
 });
