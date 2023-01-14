@@ -7,8 +7,8 @@ from decouple import config
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
-DEBUG = False
+SECRET_KEY = config("SECRET_KEY")
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 
 ALLOWED_HOSTS = ['localhost','trade-rite.ng', 'www.trade-rite.ng']
