@@ -8,7 +8,7 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config("SECRET_KEY")
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['localhost','trade-rite.ng', 'www.trade-rite.ng']
@@ -128,15 +128,12 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# try:
-#     from .local_settings import *
-
-# except ImportError:
-#     pass    Internal Server Error
-
 if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = True
     # SESSION_COOKIE_SECURE = True
+
+WHATSAPP_URL = config('WHATSAPP_URL')
+WHATSAPP_TOKEN = config('WHATSAPP_TOKEN')
 
 django_heroku.settings(locals())
