@@ -37,7 +37,7 @@ def whatsappHook(request):
          return HttpResponse(challenge, status=200)
 
       else:
-         return HttpResponse('error', status= 401)   
+         return HttpResponse('error', status= 403)   
 
    if request.method == 'POST':
       data = json.loads(request.body)
