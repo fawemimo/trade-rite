@@ -1,0 +1,201 @@
+[
+{
+    "model": "pages.seooptimization",
+    "pk": 1,
+    "fields": {
+        "seo_title": "Keywords",
+        "seo_keyword": "Buy and Sell Bitcoin with best Market rate, Get started with the easiest and most secured platform to buy & sell cryptocurrencies, Swift Transaction\r\nBuy/sell your crypto with instant payment, on our secure and reliable platform,No Hidden Charges\r\n\r\nBuy/sell your crypto with instant payment, on our secure and reliable platform,24/7 Service\r\n\r\nBuy/sell your crypto with instant payment, on our secure and reliable platform"
+    }
+},
+{
+    "model": "pages.mainbanner",
+    "pk": 1,
+    "fields": {
+        "title": "Banner",
+        "published": true,
+        "banner_src": "<p>\r\n\t\t\t\t\tBuy and Sell <span class=\"rateBitcoin\">Bitcoin</span> with\r\n\t\t\t\t\t<span class=\"rateBitcoin\">best Market rate</span>\r\n\t\t\t\t</p>\r\n\r\n\t\t\t\t<p>\r\n\t\t\t\t\tGet started with the easiest and most secured platform to buy & sell\r\n\t\t\t\t\tcryptocurrencies.\r\n\t\t\t\t</p>"
+    }
+},
+{
+    "model": "pages.sectionbanner",
+    "pk": 1,
+    "fields": {
+        "title": "About Us",
+        "published": true,
+        "banner_src": "Trade-rite.ng is a Fintech company registered with Coperate Affairs Commission, we create a platform for buying and selling of all digital assets with a faster and seamless technological innovation including excellence services on a secure and trusted platform so everyone to acheive financial freedom and inclusion."
+    }
+},
+{
+    "model": "pages.componentdump",
+    "pk": 2,
+    "fields": {
+        "title": "Footer",
+        "body": "<div>\r\n<div>&lt;footer&gt;</div>\r\n<div>&lt;div&gt;</div>\r\n<div>&lt;imgsrc=\"{% static 'img/Group 2.png'%}\"alt=\"trade-rite.ng logo\" /&gt;</div>\r\n<div>&lt;button&gt;Get Started&lt;/button&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;div&gt;</div>\r\n<div>&lt;divclass=\"navlist-container\"&gt;</div>\r\n<div>&lt;span&gt;More&lt;/span&gt;</div>\r\n<div>&lt;ul&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;/ul&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;divclass=\"navlist-container\"&gt;</div>\r\n<div>&lt;span&gt;Legal&lt;/span&gt;</div>\r\n<div>&lt;ul&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;/ul&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;divclass=\"navlist-container\"&gt;</div>\r\n<div>&lt;span&gt;Be Social&lt;/span&gt;</div>\r\n<div>&lt;ul&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;li&gt;&lt;ahref=\"\"&gt;About&lt;/a&gt;&lt;/li&gt;</div>\r\n<div>&lt;/ul&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;!-- &lt;div class=\"footer-brand-logo\"&gt;</div>\r\n<div>&lt;div class=\"footer-brand\"&gt;</div>\r\n<div>&lt;img src=\"img/logo_no-bg.png\" alt=\"trade-rite.ng logo\" /&gt;</div>\r\n<br />\r\n<div>&lt;div class=\"get-started\"&gt;</div>\r\n<div>&lt;span&gt; Get Started &lt;/span&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;div class=\"footer-brand-container\"&gt;</div>\r\n<div>&lt;div class=\"footer-brand-items\"&gt;</div>\r\n<div>&lt;ul&gt;</div>\r\n<div>&lt;h4&gt;More&lt;/h4&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Home&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;About Us&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Contact&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;/ul&gt;</div>\r\n<br />\r\n<div>&lt;ul&gt;</div>\r\n<div>&lt;h4&gt;More&lt;/h4&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Home&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;About Us&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Contact&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Home&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;About Us&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Contact&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;/ul&gt;</div>\r\n<br />\r\n<div>&lt;ul&gt;</div>\r\n<div>&lt;h4&gt;Social Handles&lt;/h4&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Facebook&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Twitter&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Instagram&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Linkedin&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Tik tok&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;li&gt;</div>\r\n<div>&lt;a href=\"#\"&gt;Discord&lt;/a&gt;</div>\r\n<div>&lt;/li&gt;</div>\r\n<div>&lt;/ul&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;/div&gt;</div>\r\n<div>&lt;/div&gt; --&gt;</div>\r\n<div>&lt;/footer&gt;</div>\r\n</div>"
+    }
+},
+{
+    "model": "pages.navlink",
+    "pk": 1,
+    "fields": {
+        "title": "LEGAL",
+        "descriptions": "certifications is our legitimate loyalities"
+    }
+},
+{
+    "model": "pages.navlink",
+    "pk": 2,
+    "fields": {
+        "title": "BE SOCIAL",
+        "descriptions": "All social links"
+    }
+},
+{
+    "model": "pages.navlink",
+    "pk": 4,
+    "fields": {
+        "title": "FAQ",
+        "descriptions": "tHFSFY"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 1,
+    "fields": {
+        "navlink": 1,
+        "title": "certificate",
+        "url_link": "'home'",
+        "descriptions": "our certificate is essential"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 2,
+    "fields": {
+        "navlink": 2,
+        "title": "Instagram",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng social handles"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 3,
+    "fields": {
+        "navlink": 2,
+        "title": "Facebook",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng facebook handles"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 4,
+    "fields": {
+        "navlink": 2,
+        "title": "Twitter",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng twitter handles"
+    }
+},
+{
+    "model": "pages.navlinkitem",
+    "pk": 5,
+    "fields": {
+        "navlink": 2,
+        "title": "Linkedin",
+        "url_link": "https://www.instagram.com/p/Cmy7n3XsVco/?igshid=Ym",
+        "descriptions": "trade-rite.ng linkedin handles"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 1,
+    "fields": {
+        "full_name": "Lati",
+        "position": "CEO",
+        "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa officia provident aspernatur error labore nostrum asperiores quaerat quasi exercitationem ipsam sunt iusto magni sit, at sed. Amet aliquam accusamus doloremque.",
+        "image": "logo-whitebg.jpg"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 2,
+    "fields": {
+        "full_name": "Wale",
+        "position": "CEO",
+        "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ab ut at maxime harum esse, quo deserunt? Accusamus eos voluptatem sit necessitatibus ipsa? Nobis nihil officiis quibusdam earum rerum eveniet?\r\n\r\n\t\tLorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ab ut at maxime harum esse, quo deserunt? Accusamus eos voluptatem sit necessitatibus ipsa? Nobis nihil officiis quibusdam earum rerum eveniet?",
+        "image": "logo-whitebg.jpg"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 3,
+    "fields": {
+        "full_name": "jrbvwjbv;",
+        "position": "nkvdb;vskj'",
+        "body": "k'nv'vlsv",
+        "image": "pages/testimonials/Screenshot_20230105_142257.png"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 4,
+    "fields": {
+        "full_name": "Adams",
+        "position": "C.E.O",
+        "body": "jpodfsofsfsf",
+        "image": "pages/testimonials/Screenshot_20230105_142257_bENq3DE.png"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 5,
+    "fields": {
+        "full_name": "FJlkdld",
+        "position": "dvdklvjdlk",
+        "body": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ab ut at maxime harum esse, quo deserunt? Accusamus eos voluptatem sit necessitatibus ipsa? Nobis nihil officiis quibusdam earum rerum eveniet? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus ab ut at maxime harum esse, quo deserunt? Accusamus eos voluptatem sit necessitatibus ipsa? Nobis nihil officiis quibusdam earum rerum eveniet?",
+        "image": "pages/testimonials/Screenshot_20230105_142257.png"
+    }
+},
+{
+    "model": "pages.getstarted",
+    "pk": 1,
+    "fields": {
+        "title": "Get Started in 3 steps",
+        "steps": "<section class=\"easy-steps\">\r\n\t\t\t<p>Get Started in 3 Easy Steps</p>\r\n\t\t\t<div class=\"easy-steps-tab-container\">\r\n\t\t\t\t<div class=\"easy-steps-tab\">\r\n\t\t\t\t\t<button class=\"tab-button\">Connect on Whatsapp</button>\r\n\t\t\t\t\t<button class=\"tab-button\">What we Offer</button>\r\n\t\t\t\t\t<button class=\"tab-button\">Our Rate</button>\r\n\t\t\t\t</div>\r\n\t\t\t\t<p>\r\n\t\t\t\t\tA direct message to us on whatsapp with fast and secure platform to trade with you instantly\r\n\t\t\t\t</p>\r\n\t\t\t\t<p>\r\n\t\t\t\t\tWe allows users to trade cryptocurrencies such as Bitcoin, Ethereum, Dogecoin, and gift cards with ease.Once you are connected, you can start trading cryptocurrencies with us\r\n\t\t\t\t</p>\r\n\t\t\t\t<p>\r\n\t\t\t\t\tYou will also get live updates on the current market rate, which will help you make more informed trading decisions. Moreover you can ask for rate and we have the best rate that will swift you to trade to with us\r\n\t\t\t\t</p>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"easy-steps-button\">\r\n\t\t\t\t<button>\r\n\t\t\t\t\t<a href=\"https://wa.me/07062592046?text=I'm%20making%20enquiry%20on%20cryptocurrencies\"  target=\"_blank\">\r\n\t\t\t\t\t\tGet Started with Trade Rite\r\n\t\t\t\t\t</a></button>\r\n\t\t\t</div>\r\n\t\t\t<img src=\"{% static 'img/bottomleft-3steps.png' %}\" alt=\"\" />\r\n\t\t\t<img src=\"{% static 'img/topright-3steps.png' %}\" alt=\"\" />\r\n\t\t\t\r\n\t\t\t<!-- <div class=\"get-started-in-3-container\">\r\n\t\t\t\t<div class=\"get-started-in-3-wrapper\">\r\n\t\t\t\t\t<div class=\"get-started-in-3-header\">\r\n\t\t\t\t\t\t<p>Get Started in 3 Easy Steps</p>\r\n\t\t\t\t\t\t<div class=\"get-started-in-3-top-description\">\r\n\t\t\t\t\t\t\t<ul>\r\n\t\t\t\t\t\t\t\t<li><a href=\"\">Create an Account</a></li>\r\n\t\t\t\t\t\t\t\t<li><a href=\"\">Add Bank Account</a></li>\r\n\t\t\t\t\t\t\t\t<li><a href=\"\">Start Buying and Selling</a></li>\r\n\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"get-started-in-3-text-display\">\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\tSign up for an account with your name, email and phone number then\r\n\t\t\t\t\t\t\tverify your identity in minutes.\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"get-started-with-trade\">\r\n\t\t\t\t\t<div class=\"get-started-button\">\r\n\t\t\t\t\t\t<p>\r\n\t\t\t\t\t\t\t<a href=\"\"> Get Started with Trade Rite </a>\r\n\t\t\t\t\t\t</p>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div> -->\r\n\t\t</section>"
+    }
+},
+{
+    "model": "pages.ourrate",
+    "pk": 2,
+    "fields": {
+        "coins_name": "BTC",
+        "bulk_quantity": "$0 - $50",
+        "exchange_rate": "745",
+        "as_at": "2023-10-20T23:00:00Z",
+        "updated_as_at": "2023-01-21"
+    }
+},
+{
+    "model": "pages.ourrate",
+    "pk": 3,
+    "fields": {
+        "coins_name": "BTC",
+        "bulk_quantity": "$50 - $200",
+        "exchange_rate": "768",
+        "as_at": "2023-01-20T23:00:00Z",
+        "updated_as_at": "2023-01-21"
+    }
+},
+{
+    "model": "pages.ourrate",
+    "pk": 4,
+    "fields": {
+        "coins_name": "BTC",
+        "bulk_quantity": "$200 - $300",
+        "exchange_rate": "798",
+        "as_at": "2023-01-20T23:00:00Z",
+        "updated_as_at": "2023-01-21"
+    }
+}
+]
