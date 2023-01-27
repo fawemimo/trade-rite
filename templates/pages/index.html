@@ -2206,9 +2206,13 @@
 				</div>
 			</div> -->
 		</section> -->
+		
+		{% if get_started %}
 		{% for x in get_started  %}
-			{{x.steps | safe }}
+		{{x.steps | safe }}
 		{% endfor %}
+		{% endif %}
+			
 		<!-- TESTIMONIALS  -->
 		<section class="testimonials">
 			<p>What People Say About Us</p>
