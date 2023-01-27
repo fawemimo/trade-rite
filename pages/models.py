@@ -116,6 +116,16 @@ class Testimonial(models.Model):
         return reverse('home')   
 
 
+class GetStarted(models.Model):
+    title = models.CharField(max_length=50) 
+    steps = models.TextField(verbose_name='Get Started Steps')
+
+
+    def __str__(self):
+        return self.title
+
+
+
 class OurRate(models.Model):
     coins_type_choices = (
          ('BTC', 'BTC'),

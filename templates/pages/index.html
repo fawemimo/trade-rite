@@ -7,8 +7,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		{% if seo %}
-		  
-		
 		{% for x in seo %}	  
 		<meta name="description" content="{{x.seo_keyword}}, www.trade-rite.ng">
 		
@@ -16,7 +14,7 @@
 		<meta property="og:description" content="{{x.seo_keyword}}">
 		{% endfor %}
 		{% endif %}
-		<meta property="og:site_name" content="www.trade-rite.ng">
+		<meta property="og:site_name" content="www.trade-rite.ng trade-rite.ng">
 		<meta property="og:image" content="{% static 'img/Group 2.png' %}">
 		<meta property="og:site_name" content="www.trade-rite.ng"></meta>
 		<meta property="og:image:alt" content="Trade rite logo">
@@ -31,6 +29,33 @@
 		</meta>
 		<meta name="twitter:card" content="summary">
 		<meta property="og:image:type" content="image/png">
+
+		<meta name="apple-mobile-web-app-title" content="www.trade-rite.ng">
+		<meta name="hostname" content="trade-rite.ng">
+		<meta name="keyboard-shortcuts-preference" content="all">
+		<meta name="application-name" content="Trade-rite Group">
+		<meta name="referrer" content="origin-when-cross-origin">
+		<meta name="language" content="en">
+		<meta name="robots" content="all">
+		<meta name="robots" content="NOODP">
+		<meta name="robots" content="NOYDIR">
+		<meta name="msnbot" content="index, follow">
+		<meta name="slurp" content="index, follow">
+		<meta name="rating" content="General">
+		<meta name="revisit-after" content="7 days">
+		<meta name="expires" content="never">
+		<meta name="email" content="">
+		<meta name="author" content="Trade-rite Group">
+		<meta name="publisher" content="Trade-rite Group">
+		<meta name="copyright" content="www.trade-rite.ng">
+		<meta name="resource-type" content="document">
+		<meta name="version" content="2.0">
+		<meta name="owner" content="Trade-rite Group">
+		<meta name="geo.region" content="Nigeria">
+		<meta name="geo.placename" content="Oyo, Nigeria">
+		<meta name="city" content="Ibadan Oyo">
+		<!-- <meta name="abstract" content="Website Designed &amp; Developed by Syllabus Technologies - tech at your comfort"> -->
+		<meta name="classification" content="Cryptocurrency, BTC/USDT Trading, Forex Trading and Futures, BTC/USDT Blog, Gift card Cryptocurrencies">
 		<title>Trade-rite | Buying and Selling of Cryptocurrency</title>
 
 		<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/android-chrome-512x512.png' %}">
@@ -83,15 +108,9 @@
 			<!-- main content board -->
 			<section class="hero-section">
 				<img class="leftside-hero" src="{% static 'img/leftside-hero.png' %}" alt="" />
-				<p>
-					Buy and Sell <span class="rateBitcoin">Bitcoin</span> with
-					<span class="rateBitcoin">best Market rate</span>
-				</p>
-
-				<p>
-					Get started with the easiest and most secured platform to buy & sell
-					cryptocurrencies.
-				</p>
+				{% for x in banner  %}
+					{{ x.banner_src | safe }}
+				{% endfor %}
 				<img class="rightside-hero" src="{% static 'img/rightside-hero.png' %}" alt="" />
 			</section>
 		</div>
@@ -495,7 +514,7 @@
 						<p>Swift Transaction</p>
 						<p>
 							Buy/sell your crypto with instant payment, on our secure and
-							reliable platform
+							reliable whatsapp platform with ease of fast response
 						</p>
 					</div>
 				</div>
@@ -1220,8 +1239,7 @@
 					<div class="svg-text">
 						<p>No Hidden Charges</p>
 						<p>
-							Buy/sell your crypto with instant payment, on our secure and
-							reliable platform
+							No extra cost or fee on our trading platform and it is user friendly
 						</p>
 					</div>
 				</div>
@@ -2071,8 +2089,7 @@
 					<div class="svg-text">
 						<p>24/7 Service</p>
 						<p>
-							Buy/sell your crypto with instant payment, on our secure and
-							reliable platform
+							Unlock the Crypto World - Buy and Sell Cryptocurrencies on WhatsApp with 24/7 Services
 						</p>
 					</div>
 				</div>
@@ -2132,25 +2149,22 @@
 
 		<!-- GET STARTED IN 3 EASY WAYS -->
 
-		<section class="easy-steps">
+		<!-- <section class="easy-steps">
 			<p>Get Started in 3 Easy Steps</p>
 			<div class="easy-steps-tab-container">
 				<div class="easy-steps-tab">
-					<button class="tab-button">Create an Account</button>
-					<button class="tab-button">Add Bank Account</button>
-					<button class="tab-button">Start Buying and Selling</button>
+					<button class="tab-button">Connect on Whatsapp</button>
+					<button class="tab-button">What we Offer</button>
+					<button class="tab-button">Our Rate</button>
 				</div>
 				<p>
-					Sign up for an account with your name, email and phone number then
-					verify your identity in minutes1.
+					A direct message to us on whatsapp with fast and secure platform to trade with you instantly
 				</p>
 				<p>
-					Sign up for an account with your name, email and phone number then
-					verify your identity in minutes2.
+					We allows users to trade cryptocurrencies such as Bitcoin, Ethereum, Dogecoin, and gift cards with ease.Once you are connected, you can start trading cryptocurrencies with us
 				</p>
 				<p>
-					Sign up for an account with your name, email and phone number then
-					verify your identity in minutes3.
+					You will also get live updates on the current market rate, which will help you make more informed trading decisions. Moreover you can ask for rate and we have the best rate that will swift you to trade to with us
 				</p>
 			</div>
 			<div class="easy-steps-button">
@@ -2191,11 +2205,13 @@
 					</div>
 				</div>
 			</div> -->
-		</section>
-
+		</section> -->
+		{% for x in get_started  %}
+			{{x.steps | safe }}
+		{% endfor %}
 		<!-- TESTIMONIALS  -->
 		<section class="testimonials">
-			<p>Testimonials</p>
+			<p>What People Say About Us</p>
 			<div class="testimonials-container">
 				{% if testimonial %}
 				{% for x in testimonial %}
@@ -2329,11 +2345,11 @@
 				{% for x in  navlinkitem %}					
 				
 				<div class="navlist-container">
-					<span>{{x.title}}</span>
+					<span>{{x.title | upper }}</span>
 					<ul>
 						{% for y in  x.navlinkitem_set.all %}
 						  
-						<li><a href="{{y.url_link}}">{{y.title}}</a></li>
+						<li><a href="{{y.url_link}}">{{y.title | title }}</a></li>
 						{% endfor %}
 						
 					</ul>

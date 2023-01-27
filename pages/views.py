@@ -13,6 +13,8 @@ def home(request):
    testimonial = Testimonial.objects.all()
    aboutus = SectionBanner.objects.all()
    seo = SeoOptimization.objects.all()
+   banner = MainBanner.objects.all()
+   get_started = GetStarted.objects.all()
 
    context = {
       'componentdump':componentdump,
@@ -20,6 +22,8 @@ def home(request):
       'testimonial':testimonial,
       'aboutus':aboutus,
       'seo':seo,
+      'banner':banner,
+      'get_started':get_started
       
    }
 
