@@ -156,3 +156,19 @@ input[type=file]::-webkit-file-upload-button:hover {
     padding-top: 0px;
     padding-bottom: 0px
 }
+
+
+@media (max-width: 767px){
+    login #container {
+        width: auto;
+        max-width: 480px;
+        margin: 298px auto;
+    }
+
+    .login .submit-row {
+        padding: 15px 0 0;
+        text-align: center;
+        width: 30%;
+        margin: 20px 35px 13px 95px;
+    }
+}

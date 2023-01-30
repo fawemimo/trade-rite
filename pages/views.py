@@ -10,7 +10,7 @@ from decouple import config
 def home(request):
    componentdump = ComponentDump.objects.all()
    navlinkitem = NavLink.objects.all()
-   testimonial = Testimonial.objects.all()
+   testimonial = Testimonial.objects.all().order_by('-id')
    aboutus = SectionBanner.objects.all()
    seo = SeoOptimization.objects.all()
    banner = MainBanner.objects.all()

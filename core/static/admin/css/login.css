@@ -44,7 +44,7 @@
 }
 
 .login #container {
-    background: #fff;
+    background: #f4f4f4;
     border: 1px solid #eaeaea;
     border-radius: 4px;
     overflow: hidden;
@@ -109,4 +109,31 @@
     color: var(--button-fg);
     cursor: pointer;
     transition: background 0.15s;
+}
+
+.login .submit-row {
+    clear: both;
+    padding: 1em 0 0 9.4em;
+    margin: 0;
+    border: none;
+    background: none;
+    text-align: center;
+    margin-left: -146px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 767px){
+    login #container {
+        width: auto;
+        max-width: 480px;
+        margin: 298px auto;
+    }
+
+    .login .submit-row {
+        padding: 15px 0 0;
+        text-align: center;
+        width: 30%;
+        margin: 20px 35px 13px 95px;
+    }
 }

@@ -10,17 +10,21 @@ Trade-rite.ng | Administration Point
 {% block branding %}
 
 <h1 id="site-name"><a href="{% url 'admin:index' %}">
-    <img src="{% static 'img/Group 2.png' %}" alt="trade-rite.ng logo" />
-						<p>RC 3673142</p>
+    <img src="{% static 'img/trade-rite-logo.png' %}" alt="trade-rite.ng logo" />
+						
 </a></h1>
 {% endblock %}
 
 {% block extrastyle %}
 <!-- favicon -->
-<link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon_io/favicon-16x16.png' %}">
-<link rel="manifest" href="{% static 'img/favicon_io/site.webmanifest' %}">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/android-chrome-512x512.png' %}">
+		<link rel="icon" type="image/x-icon" href="{% static 'img/android-chrome-512x512.png' %}">
+		<link rel="apple-touch-icon" type="image/x-icon" href="{% static 'img/android-chrome-512x512.png' %}">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+		<link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+		<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon_io/favicon-16x16.png' %}">
+		<link rel="manifest" href="{% static 'img/favicon_io/site.webmanifest' %}">
 
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="{% static 'admin/css/based.css' %}">
