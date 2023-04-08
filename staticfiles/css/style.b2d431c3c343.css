@@ -30,7 +30,7 @@ header{
 div.topbar {
 	background: rgba(32, 206, 16, 0.1);
 	width: 100%;
-	height: 416px;
+	height: 300px;
 	display: flex;
 	flex-direction: column;
 }
@@ -496,10 +496,6 @@ footer > div:last-of-type {
 		flex-direction: column;
 	}
 
-	div.topbar {		
-		height: 416px;
-	}
-	
 	div.topbar header div.container {
 		display: flex;
 		align-items: center;

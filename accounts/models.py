@@ -94,8 +94,8 @@ class User(AbstractUser):
 
 """ USER PROFILE IMAGE """
 class Profile(models.Model):
-    user                = models.OneToOneField(User,on_delete=models.CASCADE)         
-    image = models.ImageField(default='logo-whitebg.jpg',upload_to = "accounts/user/profile",validators=[validate_file_size, FileExtensionValidator(allowed_extensions=['png','jpg'])])                  
+    user                = models.OneToOneField(User,on_delete=models.CASCADE, primary_key=True,unique=True)         
+    # image = models.ImageField(default='logo-whitebg.jpg',upload_to = "accounts/user/profile",validators=[validate_file_size, FileExtensionValidator(allowed_extensions=['png','jpg'])])                  
     phoneNumber = models.CharField(max_length=50,blank=True,null=True)
     phoneID = models.CharField(max_length=50,blank=True,null=True)
     date_created        = models.DateTimeField(auto_now_add=True)

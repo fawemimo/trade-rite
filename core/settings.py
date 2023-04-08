@@ -8,10 +8,10 @@ from decouple import config
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config("SECRET_KEY")
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG')
 # DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = ['localhost','trade-rite.ng', 'www.trade-rite.ng','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -64,18 +64,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config("NAME"),
-        'USER': config("USER"),
-        'PASSWORD': config("PASSWORD"),
-        'HOST': config("HOST"),
-        'PORT':config("PORT")
-    }
-}
-
 AUTH_USER_MODEL = 'accounts.User'
 
 AUTH_PASSWORD_VALIDATORS = [
@@ -113,15 +101,7 @@ MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AWS CONSOLE CONFIG
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY =config('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME =config('AWS_STORAGE_BUCKET_NAME')
-AWS_S3_CUSTOM_DOMAIN="%s.s3.amazonaws.com" % AWS_STORAGE_BUCKET_NAME
-AWS_S3_OBJECT_PARAMETERS={"CacheControl": "max-age=86400"}
-AWS_DEFAULT_ACL = 'public-read'
 
-AWS_LOCATION = 'static'
 
 # static and media config
 STATICFILES_DIRS = [
@@ -129,18 +109,15 @@ STATICFILES_DIRS = [
 ]
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# if DEBUG:
-#     STATIC_URL = '/static/'
+if DEBUG:
+    STATIC_URL = '/static/'
 
-#  AWS 
-STATIC_URL = 'https://%s/%s'%(AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION) #AWSSTATIC
-MEDIA_URL = 'https://%s/%s/'%(AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 
 # STATIC_URL = '/static/'
 
 # DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage' # for django-storages
 
-DEFAULT_FILE_STORAGE = 'core.storages.MediaStore' # for aws backend storage
+ # for aws backend storage
 
 LOGGING = {
     'version': 1,
@@ -178,3 +155,10 @@ WHATSAPP_URL = config('WHATSAPP_URL')
 WHATSAPP_TOKEN = config('WHATSAPP_TOKEN')
 
 django_heroku.settings(locals())
+
+if DEBUG:
+    try:
+        from .prod_settings import *
+        
+    except ImportError:
+        pass

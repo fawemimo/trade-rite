@@ -124,10 +124,10 @@
 
 
 @media (max-width: 767px){
-    login #container {
+    .login #container {
         width: auto;
         max-width: 480px;
-        margin: 298px auto;
+        margin: 219px auto;
     }
 
     .login .submit-row {

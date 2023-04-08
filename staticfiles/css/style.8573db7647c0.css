@@ -496,10 +496,6 @@ footer > div:last-of-type {
 		flex-direction: column;
 	}
 
-	div.topbar {		
-		height: 416px;
-	}
-	
 	div.topbar header div.container {
 		display: flex;
 		align-items: center;

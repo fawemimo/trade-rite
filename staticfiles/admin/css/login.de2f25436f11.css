@@ -3,7 +3,7 @@
 .login {
     padding: 52vh 0;
     /* background: #123 url(//unsplash.it/900); */
-    background: url(/static/img/logo-whitebg.jpg) 24% no-repeat rgba(32, 206, 16, 0.1);
+    background: url("/static/img/logo-whitebg.adc0d1629000.jpg") 24% no-repeat rgba(32, 206, 16, 0.1);
     /* background: rgba(32, 206, 16, 0.1); */
     background-size: contain;
     background-blend-mode: multiply;
